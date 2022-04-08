@@ -1,0 +1,160 @@
+<%- include('partials/head') %> 
+
+    <%- include('partials/navbar') %> 
+    <section class="slide">
+        <div class="slide__container container grid">
+           <div class="slide__data">
+               <h2 class="slide__title">Create your neon sign</h2>
+               <p class="slide__desc">Neonová světla, Neonová osvětlení, Neonové svítidlo</p>
+               <button class="btn btn-primary btn-hover slide__btn"
+                onclick="window.location.href='#sign'">Let's go</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign section container" id="sign">
+        <h2 class="section__title-center">Vytvořit Neon</h2>
+
+        <div class="sign__container grid">
+            <div class="sign__tabs">
+                <div class="sign__tab">
+                   <div class="sign__tab-item active">
+                    <i class="sign__tab-icon far fa-edit"></i> Text
+                   </div> 
+                   <div class="sign__tab-item">
+                    <i class="sign__tab-icon fas fa-font"></i> Písma
+                   </div> 
+                   <div class="sign__tab-item">
+                    <i class="sign__tab-icon far fa-lightbulb"></i> Světla
+                   </div>
+
+                   <div class="sign__line"></div>
+                </div>
+    
+                <div class="sign__content">
+                    <div class="sign__content-pane active">
+                        <textarea class="sign__content-area" id="text-area" placeholder="Napiš sem!!!" rows="4"
+                        oninput="showIt()"></textarea>
+                    </div>
+
+                    <div class="sign__content-pane">
+                        <div class="sign__content-fonts">
+                            <% for(let font of fonts) { %> 
+                                <button class="sign__content-font" value="<%= font.name %>" style="font-family: 
+                                <%= font.name %>; font-size: <%= font.size %>%;" onclick="fontActive(this, `<%= font.name %>`);">
+                                    <%= font.name %> 
+                                </button>
+                            <% } %> 
+                        </div>
+                    </div>
+
+                    <div class="sign__content-pane">
+                        <div class="sign__content-colors">
+                            <% for(let color of colors) { %> 
+                                <button class="sign__content-lights" data-shadow="<%= color.shadow %>">
+                                        <i class="sign__content-light far fa-lightbulb <%= color.hover %>" 
+                                            style="color:  <%= color.light %>;"></i>
+                                        <p class="sign__content-name"><%= color.title %> </p>
+                                </button>
+                            <% } %> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign__show">
+                <div class="swiper slideSwipe">
+                    <div class="swiper-wrapper">
+                        <% for(let i of images) { %> 
+                        <div class="swiper-slide">
+                            <img class="sign__img" src="img/swipe/<%= i.img %> " alt="">
+                        </div>
+                        <% } %> 
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <p class="sign__box" id="sign-box">Your Sign</p>
+
+                <input class="sign__range" value="32" min="18" max="100" type="range">
+            </div>
+        </div>
+
+        <div class="sign__button">
+            <a href="#contact" class="btn btn-secondary">Poslat vzor</a>
+        </div>
+    </section>
+
+    <section class="steps section">
+        <div class="steps__container container grid">
+            <h2 class="section__title-center steps__title">Jak postupovat?</h2>
+
+            <div class="steps__content">
+                <% for(let step of steps) { %> 
+                    <div class="steps__data">
+                        <h3 class="steps__step"><%= step.title %> </h3>
+                        <span><%= step.desc %> </span>
+                        <img src="<%= step.img %> " class="steps__img" alt="">
+                    </div>
+                <% } %> 
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery section container" id="gallery">
+        <h2 class="section__title-center">Galerie</h2>
+
+        <div class="gallery__container grid">
+            <div class="gallery__list">
+                <% for(let image of gallery ) { %> 
+                    <div class="gallery__item">
+                        <img src="<%= image.src %> " alt="<%= image.alt %>" class="gallery__img">
+                    </div>
+                <% } %> 
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section container" id="contact">
+        <h2 class="section__title-center">Kontakty</h2>
+
+        <div class="contact__container grid">
+            <div class="contact__data">
+                <% for(let contact of contacts) { %> 
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle"><%= contact.subtitle %> </h3>
+
+                        <a href="<%= contact.link %> " class="contact__desc">
+                            <i class="<%= contact.icon %> contact__icon"></i>
+                            <%= contact.cont %> 
+                        </a>
+                    </div>
+                <% } %> 
+            </div>
+
+            <form action="" class="contact__form">
+                <div class="contact__inputs">
+                    <div class="contact__content">
+                        <input type="email" class="contact__input" placeholder=" ">
+                        <label for="" class="contact__label">Email</label>
+                    </div>
+
+                    <div class="contact__content">
+                        <input type="text" class="contact__input" placeholder=" ">
+                        <label for="" class="contact__label">Name</label>
+                    </div>
+
+                    <div class="contact__content contact__area">
+                        <textarea name="message" id="save-link" class="contact__input" placeholder=" "></textarea>
+                        <label for="" class="contact__label">Message</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-secondary btn-flex">Poslat</button>
+            </form>
+        </div>
+    </section>
+
+<%- include('partials/footer') %> 

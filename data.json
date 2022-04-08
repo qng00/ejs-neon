@@ -1,0 +1,276 @@
+{
+    "fonts": [
+        {
+            "name": "Hamilton",
+            "size": 210
+        },
+        {
+            "name": "Alexa",
+            "size": 190
+        },
+        {
+            "name": "Bayview",
+            "size": 230
+        },
+        {
+            "name": "Amsterdam",
+            "size": 170
+        },
+        {
+            "name": "Greenworld",
+            "size": 200
+        },
+        {
+            "name": "NewCursive",
+            "size": 200
+        },
+        {
+            "name": "Barcelona",
+            "size": 170
+        },
+        {
+            "name": "Vintage",
+            "size": 200
+        },
+        {
+            "name": "Amanda",
+            "size": 200
+        },
+        {
+            "name": "Freespirit",
+            "size": 120
+        },
+        {
+            "name": "Chelsea",
+            "size": 240
+        },
+        {
+            "name": "Signature",
+            "size": 220
+        },
+        {
+            "name": "NeonScript",
+            "size": 200
+        },
+        {
+            "name": "Rocket",
+            "size": 140
+        },
+        {
+            "name": "Northshore",
+            "size": 200
+        },
+        {
+            "name": "LoveNote",
+            "size": 200
+        },
+        {
+            "name": "Freehand",
+            "size": 210
+        },
+        {
+            "name": "Beachfront",
+            "size": 160
+        },
+        {
+            "name": "Royalty",
+            "size": 180
+        },
+        {
+            "name": "Austin",
+            "size": 260
+        },
+        {
+            "name": "WildScript",
+            "size": 210
+        },
+        {
+            "name": "Avante",
+            "size": 180
+        },
+        {
+            "name": "Monaco",
+            "size": 160
+        },
+        {
+            "name": "Waikiki",
+            "size": 170
+        },
+        {
+            "name": "ClassicType",
+            "size": 140
+        },
+        {
+            "name": "Typewriter",
+            "size": 150
+        },
+        {
+            "name": "Buttercup",
+            "size": 230
+        },
+        {
+            "name": "Melbourne",
+            "size": 150
+        },
+        {
+            "name": "NeoTokyo",
+            "size": 150
+        },
+        {
+            "name": "LoveNeon",
+            "size": 120
+        },
+        {
+            "name": "Marquee",
+            "size": 170
+        },
+        {
+            "name": "Mayfair",
+            "size": 180
+        },
+        {
+            "name": "NeonGlow",
+            "size": 150
+        },
+        {
+            "name": "NeonLite",
+            "size": 150
+        },
+        {
+            "name": "Neontrace",
+            "size": 120
+        },
+        {
+            "name": "Nevada",
+            "size": 240
+        },
+        {
+            "name": "SciFi",
+            "size": 140
+        }
+    ],
+    "colors": [
+        {
+            "title": "Bílá",
+            "light": "#e1e3e6",
+            "hover": "hover-white",
+            "shadow": "white"
+        },
+        {
+            "title": "Zelená",
+            "light": "#0db748",
+            "hover": "hover-green",
+            "shadow": "green"
+        },
+        {
+            "title": "červená",
+            "light": "#ff2a4d",
+            "hover": "hover-red",
+            "shadow": "red"
+        },
+        {
+            "title": "Modrá",
+            "light": "#0274fc",
+            "hover": "hover-blue",
+            "shadow": "blue"
+        },
+        {
+            "title": "Žlutá",
+            "light": "#fff97c",
+            "hover": "hover-yellow",
+            "shadow": "yellow"
+        },
+        {
+            "title": "Růžová",
+            "light": "#ff5ce8",
+            "hover": "hover-pink",
+            "shadow": "pink"
+        }
+    ],
+    "images": [
+        {
+            "img": "img1.jpeg"
+        },
+        {
+            "img": "img2.jpeg"
+        },
+        {
+            "img": "img3.jpeg"
+        },
+        {
+            "img": "img4.jpeg"
+        },
+        {
+            "img": "img5.jpeg"
+        }
+    ],
+    "steps": [
+        {
+            "title": "1. Krok",
+            "desc": "Napiš, Vyber písma a světla",
+            "img": "img/steps/step1.gif"
+        },
+        {
+            "title": "2. Krok",
+            "desc": "Stikni posouvej",
+            "img": "img/steps/step2.gif"
+        },
+        {
+            "title": "3. Krok",
+            "desc": "Zvětšování a zmenšování velikosti textu",
+            "img": "img/steps/step3.gif"
+        }
+    ],
+    "gallery": [
+        {
+            "src": "img/gallery/gallery1.jpeg",
+            "alt": "image1"
+        },
+        {
+            "src": "img/gallery/gallery2.jpeg",
+            "alt": "image2"
+        },
+        {
+            "src": "img/gallery/gallery3.jpeg",
+            "alt": "image3"
+        },
+        {
+            "src": "img/gallery/gallery4.jpeg",
+            "alt": "image4"
+        },
+        {
+            "src": "img/gallery/gallery5.jpeg",
+            "alt": "image5"
+        },
+        {
+            "src": "img/gallery/gallery6.jpeg",
+            "alt": "image6"
+        },
+        {
+            "src": "img/gallery/gallery7.jpeg",
+            "alt": "image7"
+        },
+        {
+            "src": "img/gallery/gallery8.jpeg",
+            "alt": "image8"
+        },
+        {
+            "src": "img/gallery/gallery9.jpeg",
+            "alt": "image9"
+        }
+    ],
+    "contacts": [
+        {
+            "subtitle": "Zavolejte nám pro podporu",
+            "icon": "fas fa-phone",
+            "cont": "+420 607 808 888",
+            "link": "tel: +420607808888"
+        },
+        {
+            "subtitle": "Napište nám na mail",
+            "icon": "fas fa-envelope",
+            "cont": "huutranh@seznam.cz",
+            "link": "mail:huutranh@seznam.cz"
+        }
+    ]
+}

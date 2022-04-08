@@ -1,0 +1,44 @@
+.gallery {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        display: grid;
+        gap: 4px;
+        grid-template-columns: repeat(2, 200px);
+
+        &:hover .gallery__item:not(:hover) {
+            filter: grayscale(100%);
+        }
+
+        &::after {
+            background-color: rgba(#000, .5);
+        }
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+        transition: .3s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, 0);
+            transition: .3s;
+        }
+    }
+
+    &__img {
+        min-height: 207px;
+        max-height: 207px;
+        min-width: 250px;
+    }
+}
